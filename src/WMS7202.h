@@ -43,8 +43,9 @@ class WMS7202
     const byte resetCommand = 0x9 << 4;
 
     int _csPin;
-    
+    SPISettings _digitalPotSPISettings;
     void sendDataOverSPI(byte commandByte, byte dataByte1, byte dataByte2);
+	void sendCommandOverSPI(byte commandByte);
 
 
 };
