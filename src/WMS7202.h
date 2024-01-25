@@ -9,8 +9,8 @@ class WMS7202
 
 {
   public:
-    const byte potA = 0x0;    // pot0 addr
-    const byte potB = 0x1;    // pot1 addr
+    const byte potA = 0x0;
+    const byte potB = 0x1;
     
     WMS7202(int csPin);
     
@@ -45,7 +45,7 @@ class WMS7202
     int _csPin;
     SPISettings _digitalPotSPISettings;
     void sendDataOverSPI(byte commandByte, byte dataByte1, byte dataByte2);
-	void sendCommandOverSPI(byte commandByte);
+    void sendCommandOverSPI(byte commandByte);
 
 
 };
