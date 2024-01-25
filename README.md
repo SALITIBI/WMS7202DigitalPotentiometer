@@ -90,5 +90,5 @@ digitalPot.increase(digitalPot.potA);
 
 ## Things to note
 * I have never managed to get the R/B pin working. It is supposed to be pulled up, and it should indicate when the chip is ready to accept more commands. For the memory operations I have introduced a delay of 2ms instead of using this pin.
-** This value can be also found in the datasheet in Table 10 - Timing parameters as the value for "Store to NVMEM Save Time". This didn't introduce any performance penalty for my applications, but it is something to be aware of.
+  * This value can be also found in the datasheet in Table 10 - Timing parameters as the value for "Store to NVMEM Save Time". This didn't introduce any performance penalty for my applications, but it is something to be aware of.
 * There is also a small delay in the reading operations as well. It is 1ms.
