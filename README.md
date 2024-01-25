@@ -4,7 +4,10 @@ This is still a work in progress.
 
 # Summary
 
-* This library lets you control the WMS7202 digital potentiometer with ease.
+* This library lets you control the WMS7202 series digital potentiometers with ease.
+  Examples:
+   * WMS7202050P
+   * WMS7202100P
 * Datasheet link: https://www.digikey.ca/htmldatasheets/production/836814/0/0/1/wms7202.html
 * You can communicate with the chip using the SPI.
 
@@ -93,3 +96,4 @@ digitalPot.increase(digitalPot.potA);
 * I have never managed to get the R/B pin working. It is supposed to be pulled up, and it should indicate when the chip is ready to accept more commands. For the memory operations I have introduced a delay of 2ms instead of using this pin.
   * This value can be also found in the datasheet in Table 10 - Timing parameters as the value for "Store to NVMEM Save Time". This didn't introduce any performance penalty for my applications, but it is something to be aware of.
 * There is also a small delay in the reading operations as well. It is 1ms.
+### You can find out more by checking out the examples.
