@@ -5,7 +5,6 @@ WMS7202::WMS7202(int csPin){
   _csPin = csPin;
   digitalWrite(csPin, HIGH);
   pinMode(_csPin, OUTPUT);
-  SPI.begin();
   _digitalPotSPISettings = SPISettings(1000000, MSBFIRST, SPI_MODE0);
 }
 
