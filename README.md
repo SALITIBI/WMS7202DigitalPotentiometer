@@ -73,8 +73,9 @@ int readTapRegister(byte TR);
 # Getting started
 
 ```
-SPI.begin();
 WMS7202 digitalPot(D8);
+...
+SPI.begin();
 digitalPot.wakeUp();
 ...
 digitalPot.writeToTR(digitalPot.potA, 230);
