@@ -1,7 +1,5 @@
 # WMS7202 Digital Potentiometer library
 
-This is still a work in progress.
-
 # Summary
 
 * This library lets you control the WMS7202 series digital potentiometers with ease.
